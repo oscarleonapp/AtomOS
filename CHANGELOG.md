@@ -14,6 +14,7 @@ Todas las modificaciones y actualizaciones importantes de AtomOS se registrarán
 
 ## [0.9.1] - 2025-03-21
 ### Added
+- Se hace un reseteo de estilos para navegadores
 - Estructura inicial del proyecto
     Creación de los archivos base para Atomic Desing (reset.css, variables.css, typography.css, utilities.css)
 - Creación del archivo index.html que contendrá los ejemplos iniciales de los atomos y moleculas
