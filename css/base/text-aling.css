@@ -1,0 +1,75 @@
+/* Archivo: base/_utilities.css */
+
+/* Alineación básica */
+.text-left {
+    text-align: left;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  
+  .text-justify {
+    text-align: justify;
+  }
+  
+  /* Alineación para idiomas RTL (de derecha a izquierda) */
+  .text-start {
+    text-align: start;
+  }
+  
+  .text-end {
+    text-align: end;
+  }
+  
+  /* Control de subrayado */
+  .text-underline {
+    text-decoration: underline;
+  }
+  
+  .text-no-underline {
+    text-decoration: none;
+  }
+  
+  /* Transformaciones de texto */
+  .text-uppercase {
+    text-transform: uppercase;
+  }
+  
+  .text-lowercase {
+    text-transform: lowercase;
+  }
+  
+  .text-capitalize {
+    text-transform: capitalize;
+  }
+  
+  /* Estilos de espaciado entre letras */
+  .text-spacing-wide {
+    letter-spacing: 0.1em;
+  }
+  
+  .text-spacing-tight {
+    letter-spacing: -0.05em;
+  }
+  
+  .text-spacing-normal {
+    letter-spacing: normal;
+  }
+  
+  /* Altura de línea personalizada */
+  .text-lineheight-normal {
+    line-height: 1.6;
+  }
+  
+  .text-lineheight-tight {
+    line-height: 1.2;
+  }
+  
+  .text-lineheight-loose {
+    line-height: 2;
+  }
