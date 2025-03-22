@@ -11,6 +11,19 @@ Todas las modificaciones y actualizaciones importantes de AtomOS se registrarán
  -->
 
 
+## [0.9.2] - 2025-03-21
+### Added
+- Nuevo archivo base agregado `base/text-aling.css`
+- Clases utilitarias para alineación de texto en `base/_utilities.css`:
+  - `.text-left`, `.text-center`, `.text-right`, `.text-justify`.
+  - Clases adicionales para transformaciones de texto: `.text-uppercase`, `.text-lowercase`, `.text-capitalize`.
+  - Estilos de espaciado entre letras: `.text-spacing-wide`, `.text-spacing-tight`, `.text-spacing-normal`.
+  - Clases para control de subrayado: `.text-underline`, `.text-no-underline`.
+  - Altura de línea personalizable con `.text-lineheight-normal`, `.text-lineheight-tight`, y `.text-lineheight-loose`.
+
+### Changed
+- Se opto por cambiar de archivo de utilidades los estilos de contenedores, para tenerlos más separados y estos tienen su propio archivo css `base/containers.css`
+
 
 ## [0.9.1] - 2025-03-21
 ### Added
