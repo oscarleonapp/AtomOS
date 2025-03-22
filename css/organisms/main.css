@@ -1,0 +1,61 @@
+/* ##
+¡Estos media queries son perfectamente compatibles con el enfoque mobile-first! De hecho,
+están diseñados para funcionar bajo ese principio. En un enfoque mobile-first, 
+defines primero los estilos base (los que serán aplicados a dispositivos pequeños, como móviles)
+y usas los media queries solo para agregar ajustes a pantallas más grandes.
+## */
+
+
+/* ##
+Define los estilos base fuera de los media queries: Estos estilos serán aplicados por defecto a pantallas pequeñas.
+## */
+.main {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 100%; /* Flexible para móviles */
+    box-sizing: border-box;
+}
+
+
+/* ##
+Aplica los media queries para pantallas más grandes: Los media queries ajustan los estilos a medida que el tamaño de la pantalla aumenta.
+## */
+@media (min-width: 480px) {
+    .main {
+        padding: 15px;
+        max-width: 90%;
+    }
+}
+
+@media (min-width: 768px) {
+    .main {
+        padding: 20px;
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main {
+        padding: 30px;
+        max-width: 1200px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .main {
+        max-width: 1400px;
+    }
+}
+
+/* ##
+¿Por qué no necesitas modificar los media queries?
+El enfoque ya sigue una progresión natural, donde los estilos básicos funcionan en pantallas pequeñas
+y los media queries solo se usan para ajustes específicos en pantallas más grandes.
+
+Si deseas optimizar aún más tu CSS, recuerda:
+
+Mobile-first: Diseñas pensando primero en pantallas pequeñas y luego escalas hacia arriba.
+
+Simplicidad: Evita agregar demasiados puntos de quiebre si no es necesario.
+### */

@@ -1,0 +1,8 @@
+/* molecules/_sections.css */
+.section {
+    background-color: var(--verde-oscuro);
+    color: var(--blanco);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+  }
