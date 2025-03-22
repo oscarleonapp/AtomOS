@@ -1,0 +1,69 @@
+/*CONTENEDOR ESTANDAR
+Útil para el layout general y el contenido principal.
+*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+/*CONTENEDOR FLUIDO
+Ideal cuando necesitas que el contenedor se ajuste al 100% del ancho de la pantalla.
+*/
+.container-fluid {
+    width: 100%;
+    padding: 0 15px;
+  }
+  
+/*CONTENEDOR PEQUEÑO
+Para contenido más compacto, como formularios o cajas de mensajes.
+*/
+.container-small {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  
+/*CONTENEDOR PARA SECCIONES
+Para secciones específicas como headers o footers.
+*/
+.container-section {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px 30px;
+  }
+  
+
+/*CONTENEDOR CENTRADO VERTICALMENTE
+Útil para centrar contenido en la página.
+*/
+.container-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 15px;
+  }
+  
+
+/*CONTENEDOR CON DISEÑO RESPONSIVE
+Se adapta según el ancho de la pantalla.
+*/
+.container-responsive {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  @media (min-width: 768px) {
+    .container-responsive {
+      max-width: 720px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container-responsive {
+      max-width: 1200px;
+    }
+  }
+  

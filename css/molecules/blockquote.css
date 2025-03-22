@@ -1,0 +1,9 @@
+/* molecules/_blockquote.css */
+blockquote {
+    font-family: "Playfair Display", serif;
+    font-size: 1.2rem;
+    color: var(--verde-claro);
+    border-left: 5px solid var(--amarillo-suave);
+    padding-left: 10px;
+    margin: 20px 0;
+  }

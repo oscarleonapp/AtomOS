@@ -1,0 +1,15 @@
+/* atoms/_buttons.css */
+button {
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--verde-claro);
+    color: var(--blanco);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: var(--verde-oscuro);
+  }
