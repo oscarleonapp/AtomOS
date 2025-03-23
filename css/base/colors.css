@@ -9,8 +9,21 @@
   --black-600: #404040; 
   --black-700: #2b2b2b;
   --black-800: #151515; 
-  --black-900: #000000; 
+  --black-900: #000000;
+   /* Blue */
+   --blue-50: #bfbfff;
+   --blue-100: #aaaaff;
+   --blue-200: #9595ff;
+   --blue-300: #8080ff;
+   --blue-400: #6a6aff;
+   --blue-500: #5555ff;
+   --blue-600: #4040ff; 
+   --blue-700: #2b2bff;
+   --blue-800: #1515ff; 
+   --blue-900: #0000FF;
 }
+
+
 
 .color-box {
     width: 120px;
@@ -34,7 +47,7 @@
     height: 30%;
     background: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 5px 10px;
     font-size: 12px;
