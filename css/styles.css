@@ -4,6 +4,8 @@
 @import url(base/typography.css);
 @import url(base/utilities.css);
 @import url(base/variables.css);
+@import url(base/colors.css);
+@import url(base/bg-colors.css);
 
 /* Atoms */
 @import url(atoms/buttons.css);

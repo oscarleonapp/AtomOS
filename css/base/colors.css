@@ -1,0 +1,43 @@
+:root {
+/* Black */
+  --black-50: #bfbfbf;
+  --black-100: #aaaaaa;
+  --black-200: #959595;
+  --black-300: #808080;
+  --black-400: #6a6a6a;
+  --black-500: #555555;
+  --black-600: #404040; 
+  --black-700: #2b2b2b;
+  --black-800: #151515; 
+  --black-900: #000000; 
+}
+
+.color-box {
+    width: 120px;
+    height: 140px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .color-box .top {
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .color-box .bottom {
+    height: 30%;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: black;
+  }
+  

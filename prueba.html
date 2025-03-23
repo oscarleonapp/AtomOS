@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout Responsive</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+/* Variables */
+:root {
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 32px;
+  --spacing-lg: 64px;
+
+  --color-primary: #3498db;
+  --color-secondary: #2ecc71;
+  --color-background: #f4f4f4;
+  --color-text: #333;
+  --color-header-bg: #34495e;
+  --color-footer-bg: #2c3e50;
+}
+
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+header {
+  background-color: var(--color-header-bg);
+  padding: var(--spacing-sm);
+  color: #fff;
+}
+
+footer {
+  background-color: var(--color-footer-bg);
+  padding: var(--spacing-sm);
+  color: #fff;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Contenedor Principal */
+.container {
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  flex-grow: 1; /* Asegura que el contenido ocupe todo el espacio disponible */
+  padding: var(--spacing-md);
+}
+
+/* Main content */
+main {
+  background-color: white;
+  padding: var(--spacing-md);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Asegura que el contenido ocupe todo el ancho disponible */
+  max-width: 1200px; /* Limita el ancho máximo para pantallas grandes */
+}
+
+/* Estilo de secciones internas */
+section {
+  margin-bottom: var(--spacing-md);
+}
+
+/* Estilos para pantallas grandes (mayores a 768px) */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row; /* Deja de ser una sola columna en pantallas grandes */
+  }
+
+  main {
+    width: 80%; /* Usa un 80% del espacio disponible en pantallas grandes */
+  }
+}
+
+/* Estilos para pantallas más pequeñas (por debajo de 768px) */
+@media (max-width: 767px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+</style>
+<body>
+  <header>
+    <nav>
+      Menú
+    </nav>
+  </header>
+
+  <div class="container">
+    <main>
+      <section>
+        <!-- Contenido principal -->
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <!-- Pie de página -->
+  </footer>
+
+</body>
+</html>
