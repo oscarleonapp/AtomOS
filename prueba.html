@@ -1,124 +1,188 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Layout Responsive</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <style>
-/* Variables */
-:root {
-  --spacing-xs: 8px;
-  --spacing-sm: 16px;
-  --spacing-md: 32px;
-  --spacing-lg: 64px;
-
-  --color-primary: #3498db;
-  --color-secondary: #2ecc71;
-  --color-background: #f4f4f4;
-  --color-text: #333;
-  --color-header-bg: #34495e;
-  --color-footer-bg: #2c3e50;
+    /* Estilos generales para el main y sus componentes */
+.main {
+    display: block;
+    margin: 20px auto;
+    padding: var(--padding-small);
+    max-width: var(--max-width-mobile);
+    box-sizing: border-box;
+    width: 100%;
 }
 
-/* Reset de estilos */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Sistema de Grid dentro de .main */
+.main .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 16px;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: var(--color-background);
-  color: var(--color-text);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 100vh;
+/* Estilos para las cajas de colores */
+.main .color-box {
+    width: 120px;
+    height: 140px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Fondo claro para la caja */
 }
 
-header {
-  background-color: var(--color-header-bg);
-  padding: var(--spacing-sm);
-  color: #fff;
+.main .color-box .top {
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
 }
 
-footer {
-  background-color: var(--color-footer-bg);
-  padding: var(--spacing-sm);
-  color: #fff;
-  text-align: center;
+.main .color-box .bottom {
+    height: 30%;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: black;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* Diseño responsivo para las cajas de colores */
+@media (max-width: 768px) {
+    .main .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Se adapta mejor en pantallas pequeñas */
+    }
+
+    .main .color-box {
+        width: 100%; /* Cajas ocupan todo el ancho en pantallas pequeñas */
+        height: auto; /* Altura flexible */
+    }
+
+    .main .color-box .bottom {
+        flex-direction: column; /* Pone los textos en columna en pantallas pequeñas */
+    }
 }
 
-/* Contenedor Principal */
-.container {
-  display: flex;
-  justify-content: center; /* Centra el contenido horizontalmente */
-  flex-grow: 1; /* Asegura que el contenido ocupe todo el espacio disponible */
-  padding: var(--spacing-md);
+/* Justificación de texto y line-height específico para la sección */
+.main .text-justify {
+    text-align: justify;
 }
 
-/* Main content */
-main {
-  background-color: white;
-  padding: var(--spacing-md);
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 100%; /* Asegura que el contenido ocupe todo el ancho disponible */
-  max-width: 1200px; /* Limita el ancho máximo para pantallas grandes */
+.main .text-lineheight-loose {
+    line-height: 1.6;
 }
 
-/* Estilo de secciones internas */
-section {
-  margin-bottom: var(--spacing-md);
+/* Media queries específicas para .main */
+@media (min-width: 480px) {
+    .main {
+        padding: var(--padding-medium);
+        max-width: 90%;
+    }
 }
 
-/* Estilos para pantallas grandes (mayores a 768px) */
 @media (min-width: 768px) {
-  .container {
-    flex-direction: row; /* Deja de ser una sola columna en pantallas grandes */
-  }
-
-  main {
-    width: 80%; /* Usa un 80% del espacio disponible en pantallas grandes */
-  }
+    .main {
+        padding: var(--padding-large);
+        max-width: var(--max-width-tablet);
+    }
 }
 
-/* Estilos para pantallas más pequeñas (por debajo de 768px) */
-@media (max-width: 767px) {
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+@media (min-width: 1200px) {
+    .main {
+        padding: var(--padding-large);
+        max-width: var(--max-width-desktop);
+    }
+}
+
+@media (min-width: 1600px) {
+    .main {
+        padding: var(--padding-large);
+        max-width: var(--max-width-large);
+    }
 }
 
 </style>
 <body>
-  <header>
-    <nav>
-      Menú
-    </nav>
-  </header>
-
-  <div class="container">
-    <main>
-      <section>
-        <!-- Contenido principal -->
-      </section>
+    <main class="main">
+        <article class="grid-container gap-small section">
+            <div class="col-12 col-md-6 col-lg-4">
+                <p class="text-justify text-lineheight-loose">
+                    AtomOS es un sistema de diseño modular y eficiente, basado en los principios de Atomic Design. Creado por OSCARLEON, AtomOS organiza la construcción de interfaces digitales en componentes básicos, desde átomos hasta organismos completos. Este sistema permite a los diseñadores y desarrolladores trabajar de manera colaborativa, consistente y escalable, asegurando una identidad visual cohesionada y una experiencia de usuario optimizada. AtomOS combina simplicidad y funcionalidad, adaptándose a las necesidades únicas de cada proyecto. 
+                </p>
+            </div>
+        </article>
+    
+        <!-- Colors -->
+        <div class="grid-container col-12 gap-small">
+            <div class="color-box col-1 text-center">
+                <h3>Black</h3>
+                <p>Color principal</p>
+            </div>
+    
+            <div class="color-box col-1">
+                <div class="top bg-black-50"></div>
+                <div class="bottom">
+                    <span>black-50</span>
+                </div>
+            </div>
+            <div class="color-box col-1">
+                <div class="top bg-black-100"></div>
+                <div class="bottom">
+                    <span>black-100</span>
+                </div>
+            </div>
+            <div class="color-box col-1">
+                <div class="top bg-black-200"></div>
+                <div class="bottom">
+                    <span>black-200</span>
+                </div>
+            </div>
+            <div class="color-box col-1">
+                <div class="top bg-black-300"></div>
+                <div class="bottom">
+                    <span>black-300</span>
+                </div>
+            </div>
+            <div class="color-box col-1">
+                <div class="top bg-black-400"></div>
+                <div class="bottom">
+                    <span>black-400</span>
+                </div>
+            </div>
+            <div class="color-box col-1">
+                <div class="top bg-black-50"></div>
+                <div class="bottom">
+                    <span>black-50</span>
+                </div>
+            </div>
+            <div class="color-box col-1">
+                <div class="top bg-black-50"></div>
+                <div class="bottom">
+                    <span>black-50</span>
+                </div>
+            </div>
+            <div class="color-box col-1">
+                <div class="top bg-black-50"></div>
+                <div class="bottom">
+                    <span>black-50</span>
+                </div>
+            </div>
+            <div class="color-box col-1">
+                <div class="top bg-black-50"></div>
+                <div class="bottom">
+                    <span>black-50</span>
+                </div>
+            </div>
+        </div>
+        <!-- End Colors -->
     </main>
-  </div>
-
-  <footer>
-    <!-- Pie de página -->
-  </footer>
-
+    
 </body>
 </html>
