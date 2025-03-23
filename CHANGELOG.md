@@ -10,6 +10,24 @@ Todas las modificaciones y actualizaciones importantes de AtomOS se registrarán
 
  -->
 
+# Changelog
+
+## [Versión 0.9.4] - Fecha: 22 de marzo de 2025
+
+### **Modificado**
+- Optimización del archivo `main.css`:
+  - Eliminación de redundancias en los media queries para un diseño más limpio y coherente.
+  - Consolidación de los valores repetidos utilizando variables CSS definidas en `:root`.
+  - Simplificación del enfoque `mobile-first`, manteniendo consistencia y reduciendo puntos de quiebre innecesarios.
+  - Nuevas variables agregadas: `--padding-small`, `--padding-medium`, `--padding-large`, `--max-width-mobile`, `--max-width-tablet`, `--max-width-desktop`, y `--max-width-large`.
+
+### **Mejorado**
+- Mantenibilidad:
+  - Simplificación del código para facilitar futuros ajustes a través del uso de variables CSS centralizadas en `:root`.
+
+### **Notas**
+- El archivo optimizado mantiene la compatibilidad con `grid.css` y se integra perfectamente en el nivel **Atoms** de la estructura de Atomic Design.
+
 ## [Versión 0.9.3] - 22 de marzo de 2025
 
 ### **Agregado**
