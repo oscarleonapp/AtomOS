@@ -10,6 +10,15 @@ Todas las modificaciones y actualizaciones importantes de AtomOS se registrarán
 
  -->
 
+## [Versión 0.9.3] - 22 de marzo de 2025
+
+### **Agregado**
+- Implementación de un nuevo sistema de **grid layout** basado en Atomic Design.
+  - Código para el `grid-container` con soporte para `columns` y `rows`.
+  - Configuración de gaps personalizables: `16px`, `8px` y `4px`.
+  - Clases específicas para columnas (`col-1` a `col-12`) y filas (`grid-rows-1` a `grid-rows-6`).
+  - Sistema flexible y reutilizable para layouts de páginas.
+
 
 ## [0.9.2] - 2025-03-21
 ### Added

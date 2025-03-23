@@ -1,0 +1,39 @@
+/* Grid Container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* Sistema de 12 columnas */
+    grid-template-rows: repeat(auto-fit, minmax(0, 1fr)); /* Filas automáticas */
+    gap: 16px; /* Espaciado por defecto */
+    max-width: 100%;
+    margin: auto;
+  }
+  
+  /* Columnas con diferentes spans */
+  .col-1 { grid-column: span 1; }
+  .col-2 { grid-column: span 2; }
+  .col-3 { grid-column: span 3; }
+  .col-4 { grid-column: span 4; }
+  .col-5 { grid-column: span 5; }
+  .col-6 { grid-column: span 6; }
+  .col-7 { grid-column: span 7; }
+  .col-8 { grid-column: span 8; }
+  .col-9 { grid-column: span 9; }
+  .col-10 { grid-column: span 10; }
+  .col-11 { grid-column: span 11; }
+  .col-12 { grid-column: span 12; }
+  
+  /* Filas con configuraciones específicas de gap */
+  /* Gap de 16px */
+  .gap-16 .grid-rows-1 { grid-template-rows: repeat(1, 1fr); gap: 16px; }
+  .gap-16 .grid-rows-2 { grid-template-rows: repeat(2, 1fr); gap: 16px; }
+  .gap-16 .grid-rows-3 { grid-template-rows: repeat(3, 1fr); gap: 16px; }
+  
+  /* Gap de 8px */
+  .gap-8 .grid-rows-1 { grid-template-rows: repeat(1, 1fr); gap: 8px; }
+  .gap-8 .grid-rows-2 { grid-template-rows: repeat(2, 1fr); gap: 8px; }
+  .gap-8 .grid-rows-3 { grid-template-rows: repeat(3, 1fr); gap: 8px; }
+  
+  /* Gap de 4px */
+  .gap-4 .grid-rows-1 { grid-template-rows: repeat(1, 1fr); gap: 4px; }
+  .gap-4 .grid-rows-2 { grid-template-rows: repeat(2, 1fr); gap: 4px; }
+  .gap-4 .grid-rows-3 { grid-template-rows: repeat(3, 1fr); gap: 4px; }
