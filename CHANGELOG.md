@@ -10,7 +10,29 @@ Todas las modificaciones y actualizaciones importantes de AtomOS se registrarán
 
  -->
 
-# Changelog
+## [Versión 0.9.5] - Fecha: 22 de marzo de 2025
+
+### **Agregado**
+- Implementación del **Navbar Responsive**:
+  - **Atoms**: 
+    - Creación de los estilos base en `atoms/navbar.css`, incluyendo:
+      - Estilo para contenedor principal (`navbar`).
+      - Estilos para enlaces (`nav-link`) y logo (`nav-logo`).
+      - Lógica responsiva para el toggle en pantallas pequeñas (`navbar-toggle`).
+    - Archivo `atoms/navbar.js` agregado para funcionalidad de toggle del menú.
+  - **Molecules**:
+    - Estructuración del componente `navbar.html` como molécula con enlaces, logo y toggle responsivo.
+  - **Organisms**:
+    - Inclusión del navbar como organismo completo en el archivo `organisms/navbar.html`, dentro de un `<header>`.
+
+### **Mejorado**
+- Organización del proyecto:
+  - Segmentación del navbar en Atomic Design para facilitar la reutilización y el mantenimiento.
+  - Componentes totalmente responsivos siguiendo el enfoque mobile-first.
+
+### **Notas**
+- El archivo de estilos del navbar (`navbar.css`) se encuentra en el nivel **Atoms**.
+- El archivo del toggle JavaScript (`navbar.js`) complementa el comportamiento responsivo.
 
 ## [Versión 0.9.4] - Fecha: 22 de marzo de 2025
 

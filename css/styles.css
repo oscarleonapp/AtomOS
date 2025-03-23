@@ -9,6 +9,7 @@
 @import url(atoms/buttons.css);
 @import url(atoms/links.css);
 @import url(atoms/grid.css);
+@import url(atoms/navbar.css);
 
 /* Molecules */
 @import url(molecules/blockquote.css);

@@ -1,0 +1,50 @@
+/* Contenedor principal del navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #333; /* Color de fondo */
+    color: #fff; /* Color de texto */
+  }
+  
+  /* Links individuales */
+  .nav-link {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #ffa500; /* Color de hover */
+  }
+  
+  /* Estilo del logo */
+  .nav-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Opciones del navbar responsivo */
+  .navbar-toggle {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-toggle {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  }
