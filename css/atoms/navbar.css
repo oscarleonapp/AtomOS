@@ -1,50 +1,93 @@
 /* Contenedor principal del navbar */
+/* Contenedor principal del navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    background-color: #333; /* Color de fondo */
-    color: #fff; /* Color de texto */
-  }
-  
-  /* Links individuales */
-  .nav-link {
+    align-items: center; /* Alineación vertical */
+    padding: 15px 20px;
+    background-color: #002d62; /* Azul oscuro */
+    color: #fff; /* Texto blanco */
+    font-family: Arial, sans-serif; /* Tipografía limpia */
+}
+
+/* Logo del navbar */
+.nav-logo {
+    font-size: 1.5rem; /* Tamaño de texto del logo */
+    font-weight: bold;
+    color: #62c3ff; /* Azul claro */
+    text-decoration: none;
+}
+
+/* Toggle del navbar */
+.navbar-toggle {
+    display: none;
+    font-size: 1.5rem; /* Tamaño consistente con el logo */
+    color: #fff; /* Color del toggle */
+    cursor: pointer;
+}
+
+
+/* Links del navbar */
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
     text-decoration: none;
     color: #fff;
-    margin: 0 10px;
+    margin: 0 15px;
     font-size: 1rem;
     transition: color 0.3s ease;
-  }
-  
-  .nav-link:hover {
-    color: #ffa500; /* Color de hover */
-  }
-  
-  /* Estilo del logo */
-  .nav-logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  /* Opciones del navbar responsivo */
-  .navbar-toggle {
+}
+
+.nav-link:hover {
+    color: #62c3ff; /* Efecto hover */
+}
+
+/* Flechas indicando submenús */
+.nav-arrow {
+    margin-left: 5px;
+    color: #62c3ff;
+}
+
+/* Botón responsivo */
+.navbar-toggle {
     display: none;
-  }
-  
-  @media (max-width: 768px) {
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     .navbar-toggle {
-      display: block;
-      cursor: pointer;
+        display: block;
+        align-self: flex-end;
     }
-  
+
     .nav-links {
-      display: none;
-      flex-direction: column;
-      text-align: center;
+        display: none;
+        flex-direction: column;
+        width: 100%;
     }
-  
+
     .nav-links.active {
-      display: flex;
+        display: flex;
     }
-  }
+
+    .nav-link {
+        padding: 10px 0;
+        margin: 0 10px;
+        text-align: left;
+        width: 100%;
+        border-bottom: 1px solid #444;
+    }
+}

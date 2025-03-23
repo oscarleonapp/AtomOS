@@ -1,5 +1,7 @@
-// Función para toggle en el navbar
-document.querySelector('.navbar-toggle').addEventListener('click', () => {
-    const navLinks = document.querySelector('.nav-links');
-    navLinks.classList.toggle('active');
-  });
+const navbarToggle = () => {
+    document.querySelector('.navbar-toggle').addEventListener('click', () => {
+        document.querySelector('.nav-links').classList.toggle('active');
+    });
+};
+
+export default navbarToggle;
