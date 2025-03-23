@@ -1,18 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Importación de estilos AtomOS -->
-     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>AtomOS</title>
 </head>
+
 <body>
+    <header>
+        <!-- Inclusión del navbar como organismo -->
+        <nav class="navbar">
+            <a href="#" class="nav-logo">AtomOS</a>
+            <div class="navbar-toggle">☰</div>
+            <ul class="nav-links">
+                <li><a href="#" class="nav-link">Atomos<span class="nav-arrow">→</span></a></li>
+                <li><a href="#" class="nav-link">Moleculas</a></li>
+                <li><a href="#" class="nav-link">Organismos</a></li>
+                <li><a href="#" class="nav-link">Plantillas</a></li>
+                <li><a href="#" class="nav-link">Páginas</a></li>
+                <li><a href="#" class="nav-link">Documentación</a></li>
+            </ul>
+        </nav>
+      </header>
     <main class="main">
-        <div class="container">
-            <p class="text-justify text-lineheight-loose">
-                AtomOS es un sistema de diseño modular y eficiente, basado en los principios de Atomic Design. Creado por OSCARLEON, AtomOS organiza la construcción de interfaces digitales en componentes básicos, desde átomos hasta organismos completos. Este sistema permite a los diseñadores y desarrolladores trabajar de manera colaborativa, consistente y escalable, asegurando una identidad visual cohesionada y una experiencia de usuario optimizada. AtomOS combina simplicidad y funcionalidad, adaptándose a las necesidades únicas de cada proyecto.
-            </p> 
-        </div>
+        <article class="grid-container gap-small">
+            <div class="col-12 col-md-6 col-lg-4">
+                <p class="text-justify text-lineheight-loose">
+                    AtomOS es un sistema de diseño modular y eficiente, basado en los principios de Atomic Design. Creado por OSCARLEON, AtomOS organiza la construcción de interfaces digitales en componentes básicos, desde átomos hasta organismos completos. Este sistema permite a los diseñadores y desarrolladores trabajar de manera colaborativa, consistente y escalable, asegurando una identidad visual cohesionada y una experiencia de usuario optimizada. AtomOS combina simplicidad y funcionalidad, adaptándose a las necesidades únicas de cada proyecto. 
+                </p>
+            </div>
+        </article>
+    </main>
+    <script type="module" src="js/main.js"></script>
 </body>
+
 </html>

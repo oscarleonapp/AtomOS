@@ -1,5 +1,4 @@
 /* Base CSS */
-@import url(base/containers.css);
 @import url(base/reset.css);
 @import url(base/text-aling.css);
 @import url(base/typography.css);
@@ -9,6 +8,8 @@
 /* Atoms */
 @import url(atoms/buttons.css);
 @import url(atoms/links.css);
+@import url(atoms/grid.css);
+@import url(atoms/navbar.css);
 
 /* Molecules */
 @import url(molecules/blockquote.css);
