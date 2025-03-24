@@ -1,0 +1,77 @@
+/* Simulación de encabezados HTML */
+.text-h1 {
+    font-size: 2.5rem; /* Tamaño similar a h1 */
+    font-weight: bold; /* Negrita para destacar */
+    line-height: 1.2;  /* Ajuste de altura de línea */
+}
+
+.text-h2 {
+    font-size: 2rem; /* Tamaño similar a h2 */
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.text-h3 {
+    font-size: 1.75rem; /* Tamaño similar a h3 */
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.text-h4 {
+    font-size: 1.5rem; /* Tamaño similar a h4 */
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.text-h5 {
+    font-size: 1.25rem; /* Tamaño similar a h5 */
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+.text-h6 {
+    font-size: 1rem; /* Tamaño similar a h6 */
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+/* Tamaños de texto */
+.text-xs {
+    font-size: 0.75rem; /* Texto extra pequeño */
+}
+
+.text-sm {
+    font-size: 0.875rem; /* Texto pequeño */
+}
+
+.text-md {
+    font-size: 1rem; /* Texto mediano (tamaño predeterminado) */
+}
+
+.text-lg {
+    font-size: 1.125rem; /* Texto grande */
+}
+
+.text-xl {
+    font-size: 1.25rem; /* Texto extra grande */
+}
+
+.text-2xl {
+    font-size: 1.5rem; /* Texto doblemente grande */
+}
+
+.text-3xl {
+    font-size: 1.875rem; /* Texto tres veces grande */
+}
+
+.text-4xl {
+    font-size: 2.25rem; /* Texto cuatro veces grande */
+}
+
+.text-5xl {
+    font-size: 3rem; /* Texto cinco veces grande */
+}
+
+.text-6xl {
+    font-size: 4rem; /* Texto seis veces grande */
+}

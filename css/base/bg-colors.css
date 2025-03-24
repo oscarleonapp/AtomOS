@@ -1,0 +1,104 @@
+@import url(colors.css);
+/* White */
+.bg-white{
+    background-color: var(--white);
+}
+
+/* Blacks Backgrounds */
+.bg-black-50{
+    background-color: var(--black-50);
+}
+.bg-black-100{
+    background-color: var(--black-100);
+}
+.bg-black-200{
+    background-color: var(--black-200);
+}
+.bg-black-300{
+    background-color: var(--black-300);
+}
+.bg-black-400{
+    background-color: var(--black-400);
+}
+.bg-black-500{
+    background-color: var(--black-500);
+}
+.bg-black-600{
+    background-color: var(--black-600);
+}
+.bg-black-700{
+    background-color: var(--black-700);
+}
+.bg-black-800{
+    background-color: var(--black-800);
+}
+.bg-black-900{
+    background-color: var(--black-900);
+}
+
+/* Blues Backgrounds */
+.bg-blue-50{
+    background-color: var(--blue-50);
+}
+.bg-blue-100{
+    background-color: var(--blue-100);
+}
+.bg-blue-200{
+    background-color: var(--blue-200);
+}
+.bg-blue-300{
+    background-color: var(--blue-300);
+}
+.bg-blue-400{
+    background-color: var(--blue-400);
+}
+.bg-blue-500{
+    background-color: var(--blue-500);
+}
+.bg-blue-600{
+    background-color: var(--blue-600);
+}
+.bg-blue-700{
+    background-color: var(--blue-700);
+}
+.bg-blue-800{
+    background-color: var(--blue-800);
+}
+.bg-blue-900{
+    background-color: var(--blue-900);
+}
+
+/* greens Backgrounds */
+.bg-green-50{
+    background-color: var(--green-50);
+}
+.bg-green-100{
+    background-color: var(--green-100);
+}
+.bg-green-200{
+    background-color: var(--green-200);
+}
+.bg-green-300{
+    background-color: var(--green-300);
+}
+.bg-green-400{
+    background-color: var(--green-400);
+}
+.bg-green-500{
+    background-color: var(--green-500);
+}
+.bg-green-600{
+    background-color: var(--green-600);
+}
+.bg-green-700{
+    background-color: var(--green-700);
+}
+.bg-green-800{
+    background-color: var(--green-800);
+}
+.bg-green-900{
+    background-color: var(--green-900);
+}
+
+
+

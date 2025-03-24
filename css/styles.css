@@ -1,14 +1,18 @@
 /* Base CSS */
+@import url(base/bg-colors.css);
+@import url(base/colors.css);
 @import url(base/reset.css);
 @import url(base/text-aling.css);
+@import url(base/text-colors.css);
+@import url(base/text-sizes.css);
 @import url(base/typography.css);
 @import url(base/utilities.css);
 @import url(base/variables.css);
 
 /* Atoms */
 @import url(atoms/buttons.css);
-@import url(atoms/links.css);
 @import url(atoms/grid.css);
+@import url(atoms/links.css);
 @import url(atoms/navbar.css);
 
 /* Molecules */
@@ -17,3 +21,4 @@
 
 /* Organisms */
 @import url(organisms/main.css);
+@import url(organisms/box-color.css);

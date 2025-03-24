@@ -2,40 +2,96 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 1rem; /* Uso de rem para mayor flexibilidad */
 }
 
 .container-fluid {
   width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 1rem; /* Uso de rem para mayor flexibilidad */
 }
 
 /* Contenedor de grid */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 16px; /* Espaciado por defecto */
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 16px;
+  align-items: start; /* Alineación de los elementos */
+  justify-items: stretch; /* Estira los elementos para que ocupen toda la celda */
 }
 
+/* Columnas */
 .col {
   padding: 8px; /* Espaciado interno */
+  grid-column: span var(--col-span, 1); /* Usa span 1 por defecto */
+  min-height: 150px; /* Garantiza que las columnas tengan una altura mínima */
+  transition: transform 0.3s ease-in-out; /* Suaviza la animación de la transformación */
 }
 
-.col-1 { grid-column: span 1; }
-.col-2 { grid-column: span 2; }
-.col-3 { grid-column: span 3; }
-.col-4 { grid-column: span 4; }
-.col-5 { grid-column: span 5; }
-.col-6 { grid-column: span 6; }
-.col-7 { grid-column: span 7; }
-.col-8 { grid-column: span 8; }
-.col-9 { grid-column: span 9; }
-.col-10 { grid-column: span 10; }
-.col-11 { grid-column: span 11; }
-.col-12 { grid-column: span 12; }
+.col[data-col-span="6"] {
+  --col-span: 6;
+}
+
+.col:hover {
+  transform: scale(1.05); /* Agranda la columna al pasar el cursor */
+}
 
 /* Configuraciones adicionales de gaps */
-.gap-small { gap: 8px; }
-.gap-tiny { gap: 4px; }
+.gap-small {
+  gap: 0.5rem; /* Espaciado adaptable */
+}
+
+.gap-tiny {
+  gap: 0.25rem;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .col {
+    grid-column: span 12; /* Todas las columnas ocupan el ancho completo */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .col {
+    grid-column: span 6; /* Dividir columnas en dispositivos medianos */
+  }
+}
+
+@media (min-width: 992px) {
+  .col {
+    grid-column: span 3; /* Cuatro columnas en dispositivos grandes */
+  }
+}
+
+/* Fallback para navegadores más antiguos */
+@supports not (display: grid) {
+  .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .col {
+    flex: 1 1 100%; /* Columna ocupa todo el ancho en el fallback */
+    max-width: 100%; /* Asegura que la columna ocupe todo el ancho */
+  }
+}
+
+/* Visibilidad condicional */
+.hidden-xs {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .hidden-xs {
+    display: block;
+  }
+}
+
+/* Añadir más reglas responsivas para dispositivos pequeños */
+@media (max-width: 480px) {
+  .col {
+    grid-column: span 12; /* Todas las columnas ocupan el ancho completo */
+  }
+}

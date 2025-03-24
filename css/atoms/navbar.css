@@ -5,8 +5,8 @@
     justify-content: space-between;
     align-items: center; /* Alineación vertical */
     padding: 15px 20px;
-    background-color: #002d62; /* Azul oscuro */
-    color: #fff; /* Texto blanco */
+    background-color: var(--black-800); /* Azul oscuro */
+    color: var(--white); /* Texto blanco */
     font-family: Arial, sans-serif; /* Tipografía limpia */
 }
 
@@ -14,7 +14,7 @@
 .nav-logo {
     font-size: 1.5rem; /* Tamaño de texto del logo */
     font-weight: bold;
-    color: #62c3ff; /* Azul claro */
+    color: var(--green-800); /* Azul claro */
     text-decoration: none;
 }
 
@@ -22,7 +22,7 @@
 .navbar-toggle {
     display: none;
     font-size: 1.5rem; /* Tamaño consistente con el logo */
-    color: #fff; /* Color del toggle */
+    color: var(--white); /* Color del toggle */
     cursor: pointer;
 }
 
@@ -37,26 +37,21 @@
 
 .nav-link {
     text-decoration: none;
-    color: #fff;
+    color: var(--white);
     margin: 0 15px;
     font-size: 1rem;
     transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-    color: #62c3ff; /* Efecto hover */
-}
-
-/* Flechas indicando submenús */
-.nav-arrow {
-    margin-left: 5px;
-    color: #62c3ff;
+    color: var(--green-800); /* Efecto hover */
+    text-decoration: none; /* Esto elimina la línea */
 }
 
 /* Botón responsivo */
 .navbar-toggle {
     display: none;
-    color: #fff;
+    color: var(--white);
     font-size: 1.5rem;
     cursor: pointer;
 }
@@ -88,6 +83,5 @@
         margin: 0 10px;
         text-align: left;
         width: 100%;
-        border-bottom: 1px solid #444;
     }
 }

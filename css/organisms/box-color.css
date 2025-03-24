@@ -1,0 +1,81 @@
+@import url(../base/colors.css);
+/* Default styles for .color-box */
+.color-box {
+    width: 120px;
+    height: 140px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    margin: 5px; /* Espaciado adicional si el gap no funciona */
+  }
+  
+  .color-box .top {
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-weight: bold;
+  }
+  
+  .color-box .bottom {
+    height: 30%;
+    background: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: var(--black-900);
+  }
+  
+  /* Estilo para el contenedor principal del grid */
+  .grid-container-color-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Ajuste dinámico de las columnas */
+    gap: 10px;
+  }
+  
+  @media (max-width: 1200px) {
+    .grid-container-color-box {
+      grid-template-columns: repeat(6, 1fr);
+      gap: 10px; /* Asegura que el gap no se pierda */
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .grid-container-color-box {
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .grid-container-color-box {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .grid-container-color-box {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .grid-container-color-box {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+  }
+  
+  
+  @media (max-width: 400px) {
+    .grid-container-color-box {
+      grid-template-columns: repeat(2, 1fr); /* 1 columna */
+    }
+  }
+  
