@@ -8,18 +8,20 @@
     --max-width-large: 1400px;
 }
 
+/* Estilos para la etiqueta main */
 .main {
     display: block;
     margin: 20px auto;
     padding: var(--padding-small);
     max-width: var(--max-width-mobile);
     box-sizing: border-box;
+    width: 100%; /* Asegura que la main ocupe todo el ancho disponible */
 }
 
 @media (min-width: 480px) {
     .main {
         padding: var(--padding-medium);
-        max-width: 90%;
+        max-width: 90%; /* Asegura que la main no sea más grande que el 90% */
     }
 }
 
@@ -39,6 +41,14 @@
 
 @media (min-width: 1600px) {
     .main {
+        padding: var(--padding-large);
         max-width: var(--max-width-large);
+    }
+}
+
+/* Asegurando que .main no interfiera con el sistema de grid */
+@media (max-width: 768px) {
+    .container, .container-fluid, .grid-container {
+        padding: 0 1rem; /* Agregar padding consistente para todo el sistema */
     }
 }

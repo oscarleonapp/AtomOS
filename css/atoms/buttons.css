@@ -1,8 +1,9 @@
+@import url(../base/colors.css);
 /* atoms/_buttons.css */
 button {
     font-family: "Montserrat", sans-serif;
-    background-color: var(--verde-claro);
-    color: var(--blanco);
+    background-color: var(--green-800);
+    color: var(--white);
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
@@ -11,5 +12,5 @@ button {
   }
   
   button:hover {
-    background-color: var(--verde-oscuro);
+    background-color: var(--green-900);
   }
