@@ -9,6 +9,15 @@ Todas las modificaciones y actualizaciones importantes de AtomOS se registrarán
 ### Removed (Para funcionalidades eliminadas)
 
  -->
+## [Versión 0.9.6] - Fecha: 23 de marzo de 2025
+### **Agregado**
+- Nuevas paletas de colores
+- Mejoras en el responsive de los Box Colors
+- Mejoras en la barra de navegación
+- Estilos para tamaños de Textos
+- Estilos para fondos
+- Estilos para colores de textos
+
 
 ## [Versión 0.9.5] - Fecha: 22 de marzo de 2025
 
