@@ -45,6 +45,7 @@
 
 .nav-link:hover {
     color: var(--green-800); /* Efecto hover */
+    text-decoration: none; /* Esto elimina la línea */
 }
 
 /* Botón responsivo */

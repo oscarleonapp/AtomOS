@@ -70,3 +70,7 @@ button {
     padding: 0;
     text-transform: none;
 }
+
+a{
+    text-decoration: none;
+}
