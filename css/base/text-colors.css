@@ -1,0 +1,101 @@
+@import url(colors.css);
+/* White */
+.text-color-white{
+    background-color: var(--white);
+}
+
+/* Blacks Backgrounds */
+.text-color-black-50{
+    background-color: var(--black-50);
+}
+.text-color-black-100{
+    background-color: var(--black-100);
+}
+.text-color-black-200{
+    background-color: var(--black-200);
+}
+.text-color-black-300{
+    background-color: var(--black-300);
+}
+.text-color-black-400{
+    background-color: var(--black-400);
+}
+.text-color-black-500{
+    background-color: var(--black-500);
+}
+.text-color-black-600{
+    background-color: var(--black-600);
+}
+.text-color-black-700{
+    background-color: var(--black-700);
+}
+.text-color-black-800{
+    background-color: var(--black-800);
+}
+.text-color-black-900{
+    background-color: var(--black-900);
+}
+
+/* Blues Backgrounds */
+.text-color-blue-50{
+    background-color: var(--blue-50);
+}
+.text-color-blue-100{
+    background-color: var(--blue-100);
+}
+.text-color-blue-200{
+    background-color: var(--blue-200);
+}
+.text-color-blue-300{
+    background-color: var(--blue-300);
+}
+.text-color-blue-400{
+    background-color: var(--blue-400);
+}
+.text-color-blue-500{
+    background-color: var(--blue-500);
+}
+.text-color-blue-600{
+    background-color: var(--blue-600);
+}
+.text-color-blue-700{
+    background-color: var(--blue-700);
+}
+.text-color-blue-800{
+    background-color: var(--blue-800);
+}
+.text-color-blue-900{
+    background-color: var(--blue-900);
+}
+
+/* greens Backgrounds */
+.text-color-green-50{
+    background-color: var(--green-50);
+}
+.text-color-green-100{
+    background-color: var(--green-100);
+}
+.text-color-green-200{
+    background-color: var(--green-200);
+}
+.text-color-green-300{
+    background-color: var(--green-300);
+}
+.text-color-green-400{
+    background-color: var(--green-400);
+}
+.text-color-green-500{
+    background-color: var(--green-500);
+}
+.text-color-green-600{
+    background-color: var(--green-600);
+}
+.text-color-green-700{
+    background-color: var(--green-700);
+}
+.text-color-green-800{
+    background-color: var(--green-800);
+}
+.text-color-green-900{
+    background-color: var(--green-900);
+}

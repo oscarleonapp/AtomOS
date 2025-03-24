@@ -1,8 +1,9 @@
+@import url(colors.css);
 /* base/_typography.css */
 body {
     font-family: "Open Sans", sans-serif;
-    color: var(--gris-oscuro);
-    background-color: var(--blanco);
+    color: var(--black-700);
+    background-color: var(--white);
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -10,7 +11,7 @@ body {
   
   h1, h2, h3 {
     font-family: "Montserrat", sans-serif;
-    color: var(--verde-oscuro);
+    color: var(--black-600);
     margin: 1rem 0;
   }
   
