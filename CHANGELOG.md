@@ -2,13 +2,11 @@
 Todas las modificaciones y actualizaciones importantes de AtomOS se registrarán aquí.
 
 <!-- Utilizar la siguiente semantica para el Changelog
-
 ### Added (Para nuevas funcionalidades o componentes)
 ### Changed (Para cambios en las funcionalidades existentes)
 ### Fixed (Para correcciones de errores o problemas)
 ### Removed (Para funcionalidades eliminadas)
-
- -->
+-->
 ## [Versión 0.9.6] - Fecha: 23 de marzo de 2025
 ### **Agregado**
 - Nuevas paletas de colores
