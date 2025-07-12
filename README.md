@@ -3,3 +3,7 @@ AtomOS es un sistema de diseño modular y eficiente, basado en los principios de
 
 ## WEB DE TEST
 [Sitio web AtomOS](https://oscarleonapp.github.io/AtomOS/)
+
+![## [Versión 0.9.6] - Fecha: 23 de marzo de 2025](src/img/v9.6/iPad.jpeg)
+![## [Versión 0.9.6] - Fecha: 23 de marzo de 2025](src/img/v9.6/iPhone.jpeg)
+![## [Versión 0.9.6] - Fecha: 23 de marzo de 2025](src/img/v9.6/MacBook.jpeg)
