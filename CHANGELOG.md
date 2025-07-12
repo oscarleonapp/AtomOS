@@ -71,7 +71,7 @@ Todas las modificaciones y actualizaciones importantes de AtomOS se registrarán
 
 ## [0.9.2] - 2025-03-21
 ### Added
-- Nuevo archivo base agregado `base/text-aling.css`
+- Nuevo archivo base agregado `base/text-align.css`
 - Clases utilitarias para alineación de texto en `base/_utilities.css`:
   - `.text-left`, `.text-center`, `.text-right`, `.text-justify`.
   - Clases adicionales para transformaciones de texto: `.text-uppercase`, `.text-lowercase`, `.text-capitalize`.
