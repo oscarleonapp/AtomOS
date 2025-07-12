@@ -1,0 +1,10 @@
+/* Margin utilities */
+.margin-small { margin: var(--space-sm); }
+.margin-medium { margin: var(--space-md); }
+.margin-large { margin: var(--space-lg); }
+
+/* Padding utilities */
+.padding-small { padding: var(--space-sm); }
+.padding-medium { padding: var(--space-md); }
+.padding-large { padding: var(--space-lg); }
+

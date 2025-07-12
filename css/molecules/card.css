@@ -1,0 +1,31 @@
+/* molecules/_card.css */
+.card {
+  background-color: var(--white);
+  border: 1px solid var(--black-200);
+  border-radius: var(--radius-base);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header,
+.card-footer {
+  padding: var(--space-md);
+  background-color: var(--black-50);
+}
+
+.card-body {
+  padding: var(--space-md);
+}
+
+.card-title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  margin-top: var(--space-sm);
+}
+

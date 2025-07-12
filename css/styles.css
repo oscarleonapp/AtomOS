@@ -18,6 +18,7 @@
 /* Molecules */
 @import url(molecules/blockquote.css);
 @import url(molecules/sections.css);
+@import url(molecules/card.css);
 
 /* Organisms */
 @import url(organisms/main.css);
