@@ -13,3 +13,9 @@ AtomOS es un sistema de diseño modular basado en Atomic Design. Esta versión u
 
 ## Uso
 Abre las páginas dentro de `pages/` o usa las plantillas como base para nuevos proyectos.
+
+## Despliegue en GitHub Pages
+
+1. Crea un repositorio en GitHub y sube el contenido de este proyecto.
+2. En la configuración del repositorio activa **GitHub Pages** apuntando a la rama `main` y la carpeta `/`.
+3. Accede a `https://<usuario>.github.io/<repositorio>/` para ver el sistema de diseño en vivo.
