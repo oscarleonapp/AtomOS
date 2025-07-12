@@ -1,0 +1,8 @@
+.hero {
+  background: var(--hero-bg, #eee) center/cover no-repeat;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+.hero-content h1 {
+  margin-bottom: 1rem;
+}

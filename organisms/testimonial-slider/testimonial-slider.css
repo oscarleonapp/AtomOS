@@ -1,0 +1,20 @@
+.testimonial-slider {
+  position: relative;
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+}
+.testimonial-slider .slides blockquote {
+  display: none;
+}
+.testimonial-slider .slides blockquote.active {
+  display: block;
+}
+.testimonial-slider .prev,
+.testimonial-slider .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.testimonial-slider .prev { left: 0; }
+.testimonial-slider .next { right: 0; }
