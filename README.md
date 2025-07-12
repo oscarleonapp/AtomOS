@@ -1,9 +1,15 @@
 # AtomOS
-AtomOS es un sistema de diseño modular y eficiente, basado en los principios de Atomic Design. Creado por OSCARLEON, AtomOS organiza la construcción de interfaces digitales en componentes básicos, desde átomos hasta organismos completos. Este sistema permite a los diseñadores y desarrolladores trabajar de manera colaborativa, consistente y escalable, asegurando una identidad visual cohesionada y una experiencia de usuario optimizada. AtomOS combina simplicidad y funcionalidad, adaptándose a las necesidades únicas de cada proyecto.
 
-## WEB DE TEST
-[Sitio web AtomOS](https://oscarleonapp.github.io/AtomOS/)
+AtomOS es un sistema de diseño modular basado en Atomic Design. Esta versión utiliza HTML, CSS y JavaScript puros para construir una biblioteca de componentes reutilizables.
 
-![## [Versión 0.9.6] - Fecha: 23 de marzo de 2025](src/img/v9.6/iPad.jpeg)
-![## [Versión 0.9.6] - Fecha: 23 de marzo de 2025](src/img/v9.6/iPhone.jpeg)
-![## [Versión 0.9.6] - Fecha: 23 de marzo de 2025](src/img/v9.6/MacBook.jpeg)
+## Estructura
+
+- `atoms/` – componentes más pequeños (botones, inputs, etiquetas, etc.)
+- `molecules/` – combinaciones de átomos (campos de formulario, tarjetas…)
+- `organisms/` – secciones completas reutilizables (header, footer, hero…)
+- `templates/` – páginas con marcadores `{{placeholder}}`
+- `pages/` – páginas con contenido de ejemplo
+- `docs/` – documentación del sistema
+
+## Uso
+Abre las páginas dentro de `pages/` o usa las plantillas como base para nuevos proyectos.

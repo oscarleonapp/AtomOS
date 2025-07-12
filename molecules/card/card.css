@@ -1,0 +1,14 @@
+.card {
+  border: 1px solid #eee;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.card-body {
+  padding: 1rem;
+}
+.card-title {
+  margin: 0 0 0.5rem;
+}
+.card-text {
+  margin: 0 0 1rem;
+}

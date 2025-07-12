@@ -1,0 +1,12 @@
+.icon-list {
+  list-style: none;
+  padding: 0;
+}
+.icon-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.icon-list .icon {
+  color: var(--primary-color, #007bff);
+}

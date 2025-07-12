@@ -1,0 +1,10 @@
+.site-footer {
+  padding: 1rem;
+  background: var(--footer-bg, #222);
+  color: #fff;
+  text-align: center;
+}
+.site-footer .section a {
+  color: inherit;
+  margin: 0 0.5rem;
+}
